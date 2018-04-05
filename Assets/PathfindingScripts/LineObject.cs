@@ -18,10 +18,10 @@ public class LineObject : MonoBehaviour {
     private void Update()
     {
 
-        if (flag)
+       
         {
             LineGenerator();
-            flag = false;
+            
 
         }
         

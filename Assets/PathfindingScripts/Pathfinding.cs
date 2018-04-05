@@ -5,10 +5,52 @@ using UnityEngine.UI;
 public class Pathfinding : MonoBehaviour
 {
     public Canvas panelFindRoute;
-    public Transform seeker, target;
-    //private LineRenderer lineRenderer;
+    
+    private Transform seeker, target;
+    public OriginDropdown originDropdown;
+
+
     Grid grid;
-    OriginDropdown originDropdown;
+
+    public Button GoButton;
+
+   
+
+    void Start()
+    {
+        Button goButton = GoButton.GetComponent<Button>();
+        goButton.onClick.AddListener(SetRoute);
+
+    }
+
+
+    private void SetRoute()
+    {
+        int dropdownSeekerIndex = originDropdown.IndexSeeker;
+        Debug.Log(dropdownSeekerIndex);
+        int dropdownTargetIndex = originDropdown.IndexTarget;
+        Debug.Log(dropdownTargetIndex);
+
+        if (originDropdown.IndexSeeker <= 15 && originDropdown.IndexTarget <= 14)
+        {
+
+            GameObject seekerObject = originDropdown.GetSeekerTargetGameObject(originDropdown.originList, originDropdown.IndexSeeker);
+            GameObject targetObject = originDropdown.GetSeekerTargetGameObject(originDropdown.modList, originDropdown.IndexTarget);
+
+
+
+
+            seeker = seekerObject.GetComponent<Transform>();
+            Debug.Log(seeker.position);
+            target = targetObject.GetComponent<Transform>();
+            Debug.Log(target.position);
+        }
+
+
+        
+       
+    }
+
 
     public void OnMouseDown()
     {
@@ -16,29 +58,41 @@ public class Pathfinding : MonoBehaviour
         Debug.Log("Go button clicked");
     }
 
-    private void SetRoute()
-    {   
-        
-    }
-    void Awake()
+
+
+    
+
+
+
+    
+
+
+        void Awake()
     {
         grid = GetComponent<Grid>();
-        //lineRenderer = GetComponent<LineRenderer>();
-        //lineRenderer.SetPosition(0, seeker.position);
-        //lineRenderer.SetPosition(1, target.position);
+        
+        
     }
+
+
 
     public void Update()
     {
-        
-        //SetRoute();
-        FindPath(seeker.position, target.position);
+        if (seeker != null && target != null)
+        {
+            FindPath(seeker.position, target.position);
+
+
+
+        }
+
     }
 
     void FindPath(Vector3 startPos, Vector3 targetPos)
     {
 
         Node startNode = grid.NodeFromWorldPoint(startPos);
+        
         Node targetNode = grid.NodeFromWorldPoint(targetPos);
 
         Heap<Node> openSet = new Heap<Node>(grid.MaxSize);
