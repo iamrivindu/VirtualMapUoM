@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Pathfinding : MonoBehaviour
 {
     public Canvas panelFindRoute;
-    
+    public LineObject lineObject;
     private Transform seeker, target;
     public OriginDropdown originDropdown;
 
@@ -14,14 +14,24 @@ public class Pathfinding : MonoBehaviour
 
     public Button GoButton;
 
-   
+
+
 
     void Start()
     {
+        lineObject.GetComponent<LineObject>();
+        //lineObject.enabled = true;
         Button goButton = GoButton.GetComponent<Button>();
         goButton.onClick.AddListener(SetRoute);
 
     }
+
+    public void SetActiveLineObject()
+    {
+        lineObject.enabled = true;
+    }
+
+
 
 
     private void SetRoute()
