@@ -8,8 +8,14 @@ public class MechScript : MonoBehaviour
 
     public Canvas CanvasMech;
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasMech.gameObject.SetActive(true);
+        Debug.Log("Canvas Opened");
+
+    }
+    public void OnMouseExit()
+    {
+        CanvasMech.gameObject.SetActive(false);
     }
 }

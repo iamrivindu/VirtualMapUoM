@@ -8,10 +8,14 @@ public class GirlsScript : MonoBehaviour {
     public Canvas CanvasGirls;
 
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasGirls.gameObject.SetActive(true);
         Debug.Log("Canvas Opened");
 
+    }
+    public void OnMouseExit()
+    {
+        CanvasGirls.gameObject.SetActive(false);
     }
 }

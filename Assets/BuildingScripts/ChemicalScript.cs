@@ -8,10 +8,14 @@ public class ChemicalScript : MonoBehaviour {
     public Canvas CanvasChemical;
 
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasChemical.gameObject.SetActive(true);
         Debug.Log("Canvas Opened");
 
+    }
+    public void OnMouseExit()
+    {
+        CanvasChemical.gameObject.SetActive(false);
     }
 }

@@ -8,10 +8,14 @@ public class CivilScript : MonoBehaviour {
     public Canvas CanvasCivil;
 
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasCivil.gameObject.SetActive(true);
         Debug.Log("Canvas Opened");
 
+    }
+    public void OnMouseExit()
+    {
+        CanvasCivil.gameObject.SetActive(false);
     }
 }

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LoginResults.unity
     guid: a78efe350d9e57c42922c0fe69a59861
+  - enabled: 1
+    path: Assets/mainUOMwithPlane.unity
+    guid: 2a9eef580608fb4468cbbb0f38447c2b
   m_configObjects: {}

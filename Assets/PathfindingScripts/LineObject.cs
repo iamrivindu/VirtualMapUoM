@@ -9,7 +9,7 @@ public class LineObject : MonoBehaviour {
     private bool flag = true ;
     private Vector3[] positionsOfPoints;
 
-    // Use this for initialization
+    
     private void Awake()
     {
         grid = GetComponent<Grid>();
@@ -28,14 +28,14 @@ public class LineObject : MonoBehaviour {
     }
 
 
-    // Update is called once per frame
+   
     void LineGenerator() {
 
         List <Vector3> tempLine = grid.GetLinePoints();
 
         foreach( Vector3 pec in tempLine)
         {
-            Debug.Log(pec);
+           // Debug.Log(pec);
         }
 
         positionsOfPoints = tempLine.ToArray();

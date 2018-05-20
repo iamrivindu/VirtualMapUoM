@@ -31,10 +31,16 @@ public class Pathfinding : MonoBehaviour
         lineObject.enabled = true;
     }
 
+    public void setDeactiveLineObject()
+    {
+        lineObject.enabled = false;
+
+    }
 
 
 
-    private void SetRoute()
+
+    public void SetRoute()
     {
         int dropdownSeekerIndex = originDropdown.IndexSeeker;
         Debug.Log(dropdownSeekerIndex);

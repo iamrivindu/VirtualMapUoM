@@ -8,8 +8,14 @@ public class GodaScript : MonoBehaviour
 
     public Canvas CanvasGoda;
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasGoda.gameObject.SetActive(true);
+        Debug.Log("Canvas Opened");
+
+    }
+    public void OnMouseExit()
+    {
+        CanvasGoda.gameObject.SetActive(false);
     }
 }

@@ -9,12 +9,15 @@ public class AdminScript : MonoBehaviour
     public Canvas CanvasAdmin;
    
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasAdmin.gameObject.SetActive(true);
         Debug.Log("Canvas Opened");
         
     }
+    public void OnMouseExit()
+    {
+        CanvasAdmin.gameObject.SetActive(false);
+    }
 
-    
 }

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://virtualmapuomfirebase.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">313597622300</string>
+  <string name="google_storage_bucket" translatable="false">virtualmapuomfirebase.appspot.com</string>
+  <string name="project_id" translatable="false">virtualmapuomfirebase</string>
+  <string name="google_api_key" translatable="false">AIzaSyD_V6lFg4vCisCuugKU_JEfvBIYr4x-8zE</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD_V6lFg4vCisCuugKU_JEfvBIYr4x-8zE</string>
+  <string name="google_app_id" translatable="false">1:313597622300:android:5719cae8ce4bd243</string>
+  <string name="default_web_client_id" translatable="false">313597622300-9b8nde5m9evsnp8ansdne945ple1tlgp.apps.googleusercontent.com</string>
+</resources>

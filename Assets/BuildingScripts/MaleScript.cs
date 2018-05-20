@@ -8,8 +8,14 @@ public class MaleScript : MonoBehaviour
 
     public Canvas CanvasMale;
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasMale.gameObject.SetActive(true);
+        Debug.Log("Canvas Opened");
+
+    }
+    public void OnMouseExit()
+    {
+        CanvasMale.gameObject.SetActive(false);
     }
 }

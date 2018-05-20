@@ -8,10 +8,14 @@ public class EeScript : MonoBehaviour {
     public Canvas CanvasEe;
 
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasEe.gameObject.SetActive(true);
         Debug.Log("Canvas Opened");
 
+    }
+    public void OnMouseExit()
+    {
+        CanvasEe.gameObject.SetActive(false);
     }
 }

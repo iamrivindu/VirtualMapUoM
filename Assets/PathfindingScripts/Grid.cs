@@ -27,8 +27,6 @@ public class Grid : MonoBehaviour
         gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
         gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
         CreateGrid();
-        //LineUpdate();
-        //SetLinePoints(temp);
        
     }
     
@@ -135,18 +133,13 @@ public class Grid : MonoBehaviour
 
     }
 
-    /*public void SetLinePoints(List<Vector3> list)
-    {
-        this.temp = new List<Vector3>(list);
-
-        
-    }*/
+   
 
     
 
     public List<Vector3> GetLinePoints()
     {
-        //Debug.Log("Hi Rivindu");
+       
 
         return this.temp;
         
@@ -175,14 +168,10 @@ public class Grid : MonoBehaviour
                 {
                     Gizmos.color = Color.black;
                     Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - .1f));
-                    //Debug.Log(n.worldPosition);                    //temp.Add(n.worldPosition);
+                    
 
 
-
-                }//positionsOfPoints = temp.ToArray();
-                //lineRenderer.SetVertexCount(positionsOfPoints.Length);
-                //lineRenderer.SetPositions(positionsOfPoints);
-
+                }
             
                 
 

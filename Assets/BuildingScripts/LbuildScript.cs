@@ -8,8 +8,14 @@ public class LbuildScript : MonoBehaviour
 
     public Canvas CanvasLbuild;
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasLbuild.gameObject.SetActive(true);
+        Debug.Log("Canvas Opened");
+
+    }
+    public void OnMouseExit()
+    {
+        CanvasLbuild.gameObject.SetActive(false);
     }
 }

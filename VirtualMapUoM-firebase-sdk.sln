@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMapUoM-firebase-sdk", "LoginAssembly.csproj", "{73BB6947-D853-F1C4-36DF-94AECB3460A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMapUoM-firebase-sdk", "Assembly-CSharp.csproj", "{D9918C5A-A72A-6438-62CF-C11B583C87E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMapUoM-firebase-sdk", "PathfindingAssembly.csproj", "{DDA1DC65-F8BA-DB06-DB9B-836AEAA0EC73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMapUoM-firebase-sdk", "DirectoryAssembly.csproj", "{D6DF4113-55CA-DBC8-39D7-8933E7E93E4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMapUoM-firebase-sdk", "Assembly-CSharp-Editor.csproj", "{9CFDC5B2-719E-8C3F-9C54-4295DFAA674E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMapUoM-firebase-sdk", "Tests.csproj", "{F84DCFAF-435B-7B93-50C0-7D0D35CC671B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73BB6947-D853-F1C4-36DF-94AECB3460A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73BB6947-D853-F1C4-36DF-94AECB3460A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73BB6947-D853-F1C4-36DF-94AECB3460A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73BB6947-D853-F1C4-36DF-94AECB3460A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9918C5A-A72A-6438-62CF-C11B583C87E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9918C5A-A72A-6438-62CF-C11B583C87E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9918C5A-A72A-6438-62CF-C11B583C87E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9918C5A-A72A-6438-62CF-C11B583C87E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA1DC65-F8BA-DB06-DB9B-836AEAA0EC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA1DC65-F8BA-DB06-DB9B-836AEAA0EC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA1DC65-F8BA-DB06-DB9B-836AEAA0EC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA1DC65-F8BA-DB06-DB9B-836AEAA0EC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6DF4113-55CA-DBC8-39D7-8933E7E93E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DF4113-55CA-DBC8-39D7-8933E7E93E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DF4113-55CA-DBC8-39D7-8933E7E93E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DF4113-55CA-DBC8-39D7-8933E7E93E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CFDC5B2-719E-8C3F-9C54-4295DFAA674E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CFDC5B2-719E-8C3F-9C54-4295DFAA674E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CFDC5B2-719E-8C3F-9C54-4295DFAA674E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CFDC5B2-719E-8C3F-9C54-4295DFAA674E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84DCFAF-435B-7B93-50C0-7D0D35CC671B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84DCFAF-435B-7B93-50C0-7D0D35CC671B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84DCFAF-435B-7B93-50C0-7D0D35CC671B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84DCFAF-435B-7B93-50C0-7D0D35CC671B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

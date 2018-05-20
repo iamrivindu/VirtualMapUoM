@@ -102,15 +102,15 @@ public class OriginDropdown : MonoBehaviour
     public void ModifyList()
     {
         int var = DropdownGetValue(origin);
-        Debug.Log(var);
-        Debug.Log(originList[var].name);
+        //Debug.Log(var);
+        //Debug.Log(originList[var].name);
 
 
         IndexSeeker = var;
-        //Debug.Log(IndexSeeker);
+        Debug.Log(IndexSeeker);
 
-        modList = originList;
-        Buildings.Remove(originList[var].name);
+        modList = new List<GameObject>( originList);
+        //Buildings.Remove(originList[var].name);
         modList.Remove(originList[var]);
 
         foreach(GameObject building in modList )

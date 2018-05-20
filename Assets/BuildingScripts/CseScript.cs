@@ -8,10 +8,14 @@ public class CseScript : MonoBehaviour {
     public Canvas CanvasCse;
 
 
-    public void OnMouseDown()
+    public void OnMouseOver()
     {
         CanvasCse.gameObject.SetActive(true);
         Debug.Log("Canvas Opened");
 
+    }
+    public void OnMouseExit()
+    {
+        CanvasCse.gameObject.SetActive(false);
     }
 }
